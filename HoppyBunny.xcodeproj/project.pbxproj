@@ -1,0 +1,319 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBB4DCB71E69240D002DEFD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB4DCB61E69240D002DEFD4 /* AppDelegate.swift */; };
+		FBB4DCB91E69240D002DEFD4 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FBB4DCB81E69240D002DEFD4 /* GameScene.sks */; };
+		FBB4DCBB1E69240D002DEFD4 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = FBB4DCBA1E69240D002DEFD4 /* Actions.sks */; };
+		FBB4DCBD1E69240D002DEFD4 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB4DCBC1E69240D002DEFD4 /* GameScene.swift */; };
+		FBB4DCBF1E69240D002DEFD4 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB4DCBE1E69240D002DEFD4 /* GameViewController.swift */; };
+		FBB4DCC21E69240D002DEFD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB4DCC01E69240D002DEFD4 /* Main.storyboard */; };
+		FBB4DCC41E69240D002DEFD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBB4DCC31E69240D002DEFD4 /* Assets.xcassets */; };
+		FBB4DCC71E69240D002DEFD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB4DCC51E69240D002DEFD4 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FBB4DCB31E69240D002DEFD4 /* HoppyBunny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoppyBunny.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBB4DCB61E69240D002DEFD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FBB4DCB81E69240D002DEFD4 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		FBB4DCBA1E69240D002DEFD4 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		FBB4DCBC1E69240D002DEFD4 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		FBB4DCBE1E69240D002DEFD4 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		FBB4DCC11E69240D002DEFD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FBB4DCC31E69240D002DEFD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBB4DCC61E69240D002DEFD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FBB4DCC81E69240D002DEFD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBB4DCB01E69240D002DEFD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBB4DCAA1E69240D002DEFD4 = {
+			isa = PBXGroup;
+			children = (
+				FBB4DCB51E69240D002DEFD4 /* HoppyBunny */,
+				FBB4DCB41E69240D002DEFD4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBB4DCB41E69240D002DEFD4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBB4DCB31E69240D002DEFD4 /* HoppyBunny.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBB4DCB51E69240D002DEFD4 /* HoppyBunny */ = {
+			isa = PBXGroup;
+			children = (
+				FBB4DCB61E69240D002DEFD4 /* AppDelegate.swift */,
+				FBB4DCB81E69240D002DEFD4 /* GameScene.sks */,
+				FBB4DCBA1E69240D002DEFD4 /* Actions.sks */,
+				FBB4DCBC1E69240D002DEFD4 /* GameScene.swift */,
+				FBB4DCBE1E69240D002DEFD4 /* GameViewController.swift */,
+				FBB4DCC01E69240D002DEFD4 /* Main.storyboard */,
+				FBB4DCC31E69240D002DEFD4 /* Assets.xcassets */,
+				FBB4DCC51E69240D002DEFD4 /* LaunchScreen.storyboard */,
+				FBB4DCC81E69240D002DEFD4 /* Info.plist */,
+			);
+			path = HoppyBunny;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBB4DCB21E69240D002DEFD4 /* HoppyBunny */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBB4DCCB1E69240D002DEFD4 /* Build configuration list for PBXNativeTarget "HoppyBunny" */;
+			buildPhases = (
+				FBB4DCAF1E69240D002DEFD4 /* Sources */,
+				FBB4DCB01E69240D002DEFD4 /* Frameworks */,
+				FBB4DCB11E69240D002DEFD4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HoppyBunny;
+			productName = HoppyBunny;
+			productReference = FBB4DCB31E69240D002DEFD4 /* HoppyBunny.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBB4DCAB1E69240D002DEFD4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = AlanLee;
+				TargetAttributes = {
+					FBB4DCB21E69240D002DEFD4 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = ZP73EQ3786;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FBB4DCAE1E69240D002DEFD4 /* Build configuration list for PBXProject "HoppyBunny" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBB4DCAA1E69240D002DEFD4;
+			productRefGroup = FBB4DCB41E69240D002DEFD4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBB4DCB21E69240D002DEFD4 /* HoppyBunny */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBB4DCB11E69240D002DEFD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBB4DCC21E69240D002DEFD4 /* Main.storyboard in Resources */,
+				FBB4DCB91E69240D002DEFD4 /* GameScene.sks in Resources */,
+				FBB4DCC41E69240D002DEFD4 /* Assets.xcassets in Resources */,
+				FBB4DCC71E69240D002DEFD4 /* LaunchScreen.storyboard in Resources */,
+				FBB4DCBB1E69240D002DEFD4 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBB4DCAF1E69240D002DEFD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBB4DCBD1E69240D002DEFD4 /* GameScene.swift in Sources */,
+				FBB4DCBF1E69240D002DEFD4 /* GameViewController.swift in Sources */,
+				FBB4DCB71E69240D002DEFD4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FBB4DCC01E69240D002DEFD4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBB4DCC11E69240D002DEFD4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FBB4DCC51E69240D002DEFD4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBB4DCC61E69240D002DEFD4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBB4DCC91E69240D002DEFD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FBB4DCCA1E69240D002DEFD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBB4DCCC1E69240D002DEFD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZP73EQ3786;
+				INFOPLIST_FILE = HoppyBunny/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ycis-px.Alan.HoppyBunny";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FBB4DCCD1E69240D002DEFD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZP73EQ3786;
+				INFOPLIST_FILE = HoppyBunny/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ycis-px.Alan.HoppyBunny";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBB4DCAE1E69240D002DEFD4 /* Build configuration list for PBXProject "HoppyBunny" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBB4DCC91E69240D002DEFD4 /* Debug */,
+				FBB4DCCA1E69240D002DEFD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBB4DCCB1E69240D002DEFD4 /* Build configuration list for PBXNativeTarget "HoppyBunny" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBB4DCCC1E69240D002DEFD4 /* Debug */,
+				FBB4DCCD1E69240D002DEFD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBB4DCAB1E69240D002DEFD4 /* Project object */;
+}
