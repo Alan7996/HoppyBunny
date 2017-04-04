@@ -15,6 +15,11 @@
 		FBB4DCC21E69240D002DEFD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB4DCC01E69240D002DEFD4 /* Main.storyboard */; };
 		FBB4DCC41E69240D002DEFD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBB4DCC31E69240D002DEFD4 /* Assets.xcassets */; };
 		FBB4DCC71E69240D002DEFD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB4DCC51E69240D002DEFD4 /* LaunchScreen.storyboard */; };
+		FBB4DCD11E692476002DEFD4 /* sfx_flap.caf in Resources */ = {isa = PBXBuildFile; fileRef = FBB4DCCF1E692476002DEFD4 /* sfx_flap.caf */; };
+		FBB4DCD21E692476002DEFD4 /* sfx_goal.caf in Resources */ = {isa = PBXBuildFile; fileRef = FBB4DCD01E692476002DEFD4 /* sfx_goal.caf */; };
+		FBB4DCD41E692712002DEFD4 /* Hero.sks in Resources */ = {isa = PBXBuildFile; fileRef = FBB4DCD31E692712002DEFD4 /* Hero.sks */; };
+		FBB4DCD61E692DE9002DEFD4 /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB4DCD51E692DE9002DEFD4 /* CGFloat+Extensions.swift */; };
+		FBB4DCD81E6936CA002DEFD4 /* Obstacle.sks in Resources */ = {isa = PBXBuildFile; fileRef = FBB4DCD71E6936CA002DEFD4 /* Obstacle.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		FBB4DCC31E69240D002DEFD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBB4DCC61E69240D002DEFD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBB4DCC81E69240D002DEFD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBB4DCCF1E692476002DEFD4 /* sfx_flap.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sfx_flap.caf; sourceTree = "<group>"; };
+		FBB4DCD01E692476002DEFD4 /* sfx_goal.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sfx_goal.caf; sourceTree = "<group>"; };
+		FBB4DCD31E692712002DEFD4 /* Hero.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Hero.sks; sourceTree = "<group>"; };
+		FBB4DCD51E692DE9002DEFD4 /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
+		FBB4DCD71E6936CA002DEFD4 /* Obstacle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Obstacle.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,15 +72,28 @@
 			children = (
 				FBB4DCB61E69240D002DEFD4 /* AppDelegate.swift */,
 				FBB4DCB81E69240D002DEFD4 /* GameScene.sks */,
+				FBB4DCD31E692712002DEFD4 /* Hero.sks */,
 				FBB4DCBA1E69240D002DEFD4 /* Actions.sks */,
+				FBB4DCD71E6936CA002DEFD4 /* Obstacle.sks */,
 				FBB4DCBC1E69240D002DEFD4 /* GameScene.swift */,
 				FBB4DCBE1E69240D002DEFD4 /* GameViewController.swift */,
+				FBB4DCD51E692DE9002DEFD4 /* CGFloat+Extensions.swift */,
 				FBB4DCC01E69240D002DEFD4 /* Main.storyboard */,
 				FBB4DCC31E69240D002DEFD4 /* Assets.xcassets */,
+				FBB4DCCE1E692476002DEFD4 /* SFX */,
 				FBB4DCC51E69240D002DEFD4 /* LaunchScreen.storyboard */,
 				FBB4DCC81E69240D002DEFD4 /* Info.plist */,
 			);
 			path = HoppyBunny;
+			sourceTree = "<group>";
+		};
+		FBB4DCCE1E692476002DEFD4 /* SFX */ = {
+			isa = PBXGroup;
+			children = (
+				FBB4DCCF1E692476002DEFD4 /* sfx_flap.caf */,
+				FBB4DCD01E692476002DEFD4 /* sfx_goal.caf */,
+			);
+			path = SFX;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +159,12 @@
 				FBB4DCC21E69240D002DEFD4 /* Main.storyboard in Resources */,
 				FBB4DCB91E69240D002DEFD4 /* GameScene.sks in Resources */,
 				FBB4DCC41E69240D002DEFD4 /* Assets.xcassets in Resources */,
+				FBB4DCD21E692476002DEFD4 /* sfx_goal.caf in Resources */,
 				FBB4DCC71E69240D002DEFD4 /* LaunchScreen.storyboard in Resources */,
+				FBB4DCD41E692712002DEFD4 /* Hero.sks in Resources */,
 				FBB4DCBB1E69240D002DEFD4 /* Actions.sks in Resources */,
+				FBB4DCD11E692476002DEFD4 /* sfx_flap.caf in Resources */,
+				FBB4DCD81E6936CA002DEFD4 /* Obstacle.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +177,7 @@
 			files = (
 				FBB4DCBD1E69240D002DEFD4 /* GameScene.swift in Sources */,
 				FBB4DCBF1E69240D002DEFD4 /* GameViewController.swift in Sources */,
+				FBB4DCD61E692DE9002DEFD4 /* CGFloat+Extensions.swift in Sources */,
 				FBB4DCB71E69240D002DEFD4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
