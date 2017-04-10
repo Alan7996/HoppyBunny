@@ -8,15 +8,27 @@
 
 import SpriteKit
 
+enum GameSceneState {
+    case Active, GameOver
+}
+
 class GameScene: SKScene, SKPhysicsContactDelegate {
     var hero: SKSpriteNode!
     var scrollLayer: SKNode!
     var obstacleLayer: SKNode!
+    var scoreLabel: SKLabelNode!
+    
+    /* UI Connections */
+    var buttonRestart: MSButtonNode!
     
     var sinceTouch : CFTimeInterval = 0
     let fixedDelta: CFTimeInterval = 1.0/60.0 /* 60 FPS */
     let scrollSpeed: CGFloat = 200
     var spawnTimer: CFTimeInterval = 0
+    var points = 0
+    
+    /* Game management */
+    var gameState: GameSceneState = .Active
     
     override func didMove(to view: SKView) {
         /* Set up your scene here */
@@ -32,10 +44,41 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         /* Set physics contact delegate */
         physicsWorld.contactDelegate = self
+        
+        /* Set UI connections */
+        buttonRestart = self.childNode(withName: "buttonRestart") as! MSButtonNode
+        scoreLabel = self.childNode(withName: "scoreLabel") as! SKLabelNode
+        
+        /* Setup restart button selection handler */
+        buttonRestart.selectedHandler = {
+            /* Grab reference to our SpriteKit view */
+            let skView = self.view as SKView!
+            
+            /* Load Game scene */
+            let scene = GameScene(fileNamed:"GameScene") as GameScene!
+            
+            /* Ensure correct aspect mode */
+            scene!.scaleMode = .aspectFill
+            
+            /* Restart game scene */
+            skView!.presentScene(scene)
+        }
+        
+        /* Hide restart button */
+        buttonRestart.state = .Hidden
+        
+        /* Reset Score Label */
+        scoreLabel.text = String(points)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         /* Called when a touch begins */
+        
+        /* Disable touch if game state is not acive */
+        if gameState != .Active { return }
+        
+        /* Reset velocity, helps improve response against cumulative falling velocity */
+        hero.physicsBody?.velocity = CGVector(dx: 0, dy: 0)
         
         /* Apply vertical impulse */
         hero.physicsBody?.applyImpulse(CGVector(dx: 0, dy: 25))
@@ -52,6 +95,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     override func update(_ currentTime: CFTimeInterval) {
+        /* Skip game update if game no longer active */
+        if gameState != .Active { return }
+        
         /* Called before each frame is rendered */
         
         /* Grab current velocity */
@@ -145,8 +191,69 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
     }
     
-    func didBeginContact(contact: SKPhysicsContact) {
+    func didBegin(_ contact: SKPhysicsContact) {
+        /* Ensures only called while game running */
+        if gameState != .Active { return }
+        
         /* Hero touches anything, game over */
-        print("TODO: Add contact code")
+        
+        /* Get reference to bodies involved in collision */
+        let contactA:SKPhysicsBody = contact.bodyA
+        let contactB:SKPhysicsBody = contact.bodyB
+        
+        /* Get reference to the physics body parent nodes */
+        let nodeA = contactA.node!
+        let nodeB = contactB.node!
+        
+        /* Did our hero pass through the 'goal'? */
+        if nodeA.name == "goal" || nodeB.name == "goal" {
+            /* Increment points */
+            points += 1
+            
+            /* Update score label */
+            scoreLabel.text = String(points)
+            
+            return
+        }
+        
+        /* Change game state to game over */
+        gameState = .GameOver
+        
+        /* Stop any new angular velocity being applied */
+        hero.physicsBody?.allowsRotation = false
+        
+        /* Reset angular velocity */
+        hero.physicsBody?.angularVelocity = 0
+        
+        /* Stop hero flapping animation */
+        hero.removeAllActions()
+        
+        /* Create our hero death action */
+        let heroDeath = SKAction.run({
+            /* Put our hero face down in the dirt */
+            self.hero.zRotation = CGFloat(-90).degreesToRadians()
+            
+            /* Stop hero from colliding with anything else */
+            self.hero.physicsBody?.collisionBitMask = 0
+            
+            self.hero.physicsBody?.velocity = CGVector(dx: 0, dy: 0)
+            
+            self.hero.physicsBody?.affectedByGravity = false
+        })
+        
+        /* Run action */
+        hero.run(heroDeath)
+        
+        /* Load the shake action resource */
+        let shakeScene:SKAction = SKAction.init(named: "Shake")!
+        
+        /* Loop through all nodes */
+        for node in self.children {
+            /* Apply effect each ground node */
+            node.run(shakeScene)
+        }
+        
+        /* Show restart button */
+        buttonRestart.state = .Active
     }
 }
